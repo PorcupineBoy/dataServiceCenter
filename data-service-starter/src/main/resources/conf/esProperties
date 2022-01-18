@@ -1,0 +1,5 @@
+es.write.jdbcurl=127.0.0.1:9200
+es.write.username=elastic
+es.write.password=elastic
+es.write.index=customer-tags
+es.write.indextype=tags

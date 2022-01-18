@@ -1,0 +1,8 @@
+{
+    "username":"root",
+    "password":"chenks",
+    "databaseType":"mysql",
+    "querySql":"select  1 from dual" ,
+    "prepareValue":null,
+    "jdbcUrl": "jdbc:mysql://127.0.0.1:3306/data-service-center?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8&useSSL=false&allowPublicKeyRetrieval=true"
+}

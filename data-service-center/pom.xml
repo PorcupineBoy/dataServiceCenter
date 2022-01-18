@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>dataServiceCenter</artifactId>
+        <groupId>com.huaan</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>data-service-center</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>data-service-center-sdk</module>
+        <module>data-service-center-share</module>
+        <module>data-service-common</module>
+        <module>data-service-center-runtime</module>
+    </modules>
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+    <dependencyManagement>
+        <dependencies>
+            <!--common -start-->
+            <dependency>
+                <groupId>com.huaan</groupId>
+                <artifactId>elasticsearchwriter</artifactId>
+                <version>${data-all-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.huaan</groupId>
+                <artifactId>data-service-center</artifactId>
+                <version>${data-all-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.huaan</groupId>
+                <artifactId>data-service-center-runtime</artifactId>
+                <version>${data-all-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.huaan</groupId>
+                <artifactId>data-service-center-sdk</artifactId>
+                <version>${data-all-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.huaan</groupId>
+                <artifactId>data-service-center-share</artifactId>
+                <version>${data-all-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.huaan</groupId>
+                <artifactId>data-service-common</artifactId>
+                <version>${data-all-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.huaan</groupId>
+                <artifactId>datax-common</artifactId>
+                <version>${data-all-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.huaan</groupId>
+                <artifactId>plugin-rdbms-util</artifactId>
+                <version>${data-all-version}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+</project>
